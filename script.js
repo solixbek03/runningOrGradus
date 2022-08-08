@@ -68,7 +68,7 @@ elFormRun.addEventListener("submit", function(evt) {
   let HallCheck = elHall.checked;
 
   if ((GradusVall < averagegradus || GradusVall > maxgradus) || RainingCheck) {
-    elAnswer.textContent = "Afsuski bugun sovuq hovo sababli yugirishga chiqa olmaysiz :(";
+    elAnswer.textContent = "Afsuski bugun  yugirishga chiqa olmaysiz :(";
   } else if ((GradusVall > averagegradus && GradusVall < maxgradus) && HallCheck) {
     elAnswer.textContent = "Afsuski bugun yomgir tufayli yugirishga chiqa olmaysiz :(";
   } else if ((GradusVall > averagegradus && GradusVall < maxgradus || HallCheck) && RainingCheck) {
@@ -76,6 +76,8 @@ elFormRun.addEventListener("submit", function(evt) {
   } else if ((GradusVall > averagegradus && GradusVall < maxgradus) || RainingCheck) {
     elAnswer.textContent = "Yugurishga zalga yoki kochaga chiqshingiz mumkin :)";
   } else if (GradusVall > averagegradus && GradusVall < maxgradus) {
+    elAnswer.textContent = "Yugurishga chiqishingiz mumkin :)";
+  } else {
     elAnswer.textContent = "Yugurishga chiqishingiz mumkin :)";
   }
 });
