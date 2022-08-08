@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+</head>
+<body>
+  
+  <div class="container d-flex align-items-center justify-content-center flex-column mt-4 border border-3 border-danger w-50 ">
+    <h2 class="first-heading text-center h3">MASOFA</h2>
+
+    <form class="site-form form-control container d-flex align-items-center justify-content-between flex-column mt-4 w-25 border-0 bg-primary">
+      <input class="enter-number form-control w-75 mt-3" type="number" placeholder="Son yozing" required>
+
+      <button class="w-75 btn btn-danger mt-3 mb-3" type="submit">Send</button>
+    </form>
+
+    <div class="d-flex align-items-center flex-wrap">
+      <p class="result-foot mt-3 bg-dark text-light form-control w-50 text-center"></p>
+
+      <p class="result-veli mt-3 bg-success text-light form-control w-50 text-center"></p>
+  
+      <p class="result-car mt-3 bg-primary text-light form-control w-50 text-center"></p>
+  
+      <p class="result-train mt-3 bg-danger text-light form-control w-50 text-center"></p>
+    </div>
+  </div>
+
+<!-- ======================================================== SECOND ==================================================== -->
+
+  <div class="d-flex align-items-center flex-column container mt-4 border border-3 border-danger w-50">
+    <h2 class="h1 text-center mb-0 mt-3 mb-3">Go for a run</h2>
+
+    <form class="form-run form-control container d-flex align-items-center justify-content-between flex-column w-50 h-25 border-0 bg-danger mb-3">
+      <input class="enter-gradus form-control w-75 mt-3" type="number" placeholder="how many degrees outside" required>
+
+      <label>Zall ochiqmi?</label>
+      <input class="check-raining form-check-input" type="checkbox">
+
+      <label  class="mb-2 mt-2">Yomgir yogvottimi?</label>
+      <input class="check-hall form-check-input"  type="checkbox">
+
+      <button class="w-75 btn btn-primary mt-3 mb-3 " type="submit">SEND</button>
+    </form>
+
+    <p class="answer mt-3 bg-danger text-light form-control w-50 text-center"></p>
+  </div>
+
+  <!-- ======================================================== THIRD ==================================================== -->
+
+  <div class="container d-flex align-items-center justify-content-center flex-column mt-4 border border-3 border-danger w-50 mb-5">
+    <h2 class="first-heading text-center h3">GRADUS</h2>
+
+    <form class="third-form form-control container d-flex align-items-center justify-content-between flex-column mt-4 w-25 border-0 bg-primary">
+      <input class="third-input form-control w-75 mt-3" type="number" placeholder="Son yozing" required>
+
+      <select class="third-select mt-3 form-control bg-info">
+        <option value="celsius">celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="kelvin">kelvin</option>
+      </select>
+
+      <button class="w-75 btn btn-danger mt-3 mb-3" type="submit">Send</button>
+    </form>
+
+    <div class="d-flex align-items-center flex-wrap">
+      <p class="result-first mt-3 bg-dark text-light form-control w-100 text-center"></p>
+
+      <p class="result-second mt-3 bg-success text-light form-control w-100 text-center"></p>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
