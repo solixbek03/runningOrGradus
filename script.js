@@ -71,7 +71,7 @@ elFormRun.addEventListener("submit", function(evt) {
     elAnswer.textContent = "Afsuski bugun  yugirishga chiqa olmaysiz :(";
   } else if ((GradusVall > averagegradus && GradusVall < maxgradus) && HallCheck) {
     elAnswer.textContent = "Afsuski bugun yomgir tufayli yugirishga chiqa olmaysiz :(";
-  } else if ((GradusVall > averagegradus && GradusVall < maxgradus || HallCheck) && RainingCheck) {
+  } else if ((GradusVall > averagegradus && GradusVall < maxgradus && HallCheck) && RainingCheck) {
     elAnswer.textContent = "Yugurishga zalga chiqishingiz mumkin :)";
   } else if ((GradusVall > averagegradus && GradusVall < maxgradus) || RainingCheck) {
     elAnswer.textContent = "Yugurishga zalga yoki kochaga chiqshingiz mumkin :)";
